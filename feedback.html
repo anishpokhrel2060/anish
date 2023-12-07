@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(165, 200, 65);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+        }
+
+        /* Feedback Form Styles */
+        .feedback-box {
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .ratings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ratings label {
+            margin-right: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgb(165, 200, 65);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>anish project</h1>
+        <h2>html project</h2>
+        <nav>
+            <ul>
+                <li>
+                    <p1><a href="index.html" title="Home Page">Home</a></p1>
+                </li>
+                <li>
+                    <p1><a href="promotion.html" title="promotion">Promotion</a></p1>
+                </li>
+                <li>
+                    <p1><a href="product.html" title="Product">About Product</a></p1>
+                </li>
+                <li>
+                    <p1><a href="feedback.html" title="Feedback">Feedback</a></p1>
+                </li>
+                <li>
+                    <p1><a href="support.html" title="Support">Support</a></p1>
+                </li>
+                <li>
+                    <p1><a href="aboutus.html" title="Aboutus">About US</a></p1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Feedback Form -->
+    <div class="feedback-box">
+        <h3>Customer Feedback</h3>
+        <form action="conformation.php" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="customerFeedback">Feedback:</label>
+            <textarea id="customerFeedback" name="customerFeedback" rows="4" required></textarea>
+
+            <div class="ratings">
+                <label for="rating">Rating:</label>
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">5</label>
+            </div>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Anish Project</p>
+    </footer>
+</body>
+</html>

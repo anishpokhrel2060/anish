@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar {
+       background-color: rgb(165,200, 65);
+       color: white;
+       border: 2px solid black;
+       margin: 20px;
+       padding: 20px;
+    }
+        body {background-color: powderblue;
+        }
+        
+        h1   {color:red;
+        text-align: center;}
+        h2   {color: green;
+        text-align: center;}
+        nav li {
+    display: inline;
+    margin-right: 10px;
+    }
+    p1:hover{background-color:pink;}
+    p2
+    {color:red;}
+    p {
+    color: green;
+    }
+    body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.intro {
+  background-color: rgb(200,200, 65);
+  color: white;
+  border: 2px solid red;
+  margin: 40px;
+  padding: 40px;
+}
+.intro:hover {
+  background-color:black; /* Change the background color on hover */
+  text-emphasis-color: red;
+}
+
+
+.column {
+  position: relative;
+  overflow: hidden;
+}
+
+.column .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:red;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .8s ease;
+}
+
+.column:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.column .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.gif{
+  
+  display: block;
+  margin-left: 760px;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        
+        <aside> <p> Hi </p></aside>
+
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li>
+                        <p1><a href="index.html" title="Home Page">Home</a></p1>
+                    </li>
+                    <li>
+                        <p1><a href="promotion.html" title="promotion">Promotion</a></p1>
+                    </li>
+                    <li>
+                        <p1><a href="product.html" title="Product">About Product</a></p1>
+                    </li>
+                    <li>
+                        <p1><a href="feedback.html" title="Feedback">Feedback</a></p1>
+                    </li>
+                    <li>
+                        <p1><a href="support.html" title="Support">Support</a></p1>
+                    </li>
+                    <li>
+                        <p1><a href="aboutus.html" title="Aboutus">About US</a></p1>
+                    </li>
+    
+                </ul>
+                
+            </nav>
+        </div>
+
+    </header>
+
+
+
+    <marquee><i>Hi ! Good Morning by Lacto</i></marquee>
+    <h1 >LACTO </h1>
+        <h2>Project By Anish</h2>
+      <div class="gif">
+        <img src="giphy.gif" alt="my gif by anish" >
+      </div>
+
+    <marquee direction="right"
+             behavior="alternate"
+             style="border:BLACK 2px SOLID">
+        <p> <b>LACTO <p2> for fun</p2> </b></p>
+    </marquee>
+
+
+
+    <div class="row">
+        <div class="column">
+          <img src="lactofun.png" alt="lacto" style="width:100%">
+          <div class="overlay">
+            <div class="text">lacto model 1<br>
+                This was manufactured in 1989 AD in Lacto-Facto Industry in Nepal.
+                <br><i>Move cursor to next image to get info!...</i>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="column">
+          <img src="images.jpeg" alt="lacto" style="width:100%">
+          <div class="overlay">
+            <div class="text">lacto model 2<br>
+                This was manufactured in 1999 AD in Lacto-Facto Industry in Nepal.
+                <br><i>Move cursor to next image to get info!...</i>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="column">
+          <img src="lastimg.jpeg" alt="lacto" style="width:100%">
+          <div class="overlay">
+            <div class="text">lacto model 3<br>
+                This was manufactured in 2000 AD in Lacto-Facto Industry in Nepal.
+                <br><i>Move cursor to next image to get info!...</i>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="intro">
+        Lacto the candy. 
+        Lacto is the best candy in Nepal. And have received the best candy award by the government of Nepal.
+      </div>
+
+
+</body>
+</html>
